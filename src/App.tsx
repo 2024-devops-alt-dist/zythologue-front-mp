@@ -12,9 +12,7 @@ function App() {
       <h1>Mon premier composant</h1>
       <Button title="Mon bouton" text="Test bouton" />
 
-      <BeerCard cardTitle="IPA Classic" description="A hoppy and refreshing India Pale Ale." />
-      <BeerCard cardTitle="Stout Supreme" description="A rich and creamy dark beer with hints of chocolate." />
-      <BeerCard cardTitle="Lager Light" description="A crisp and smooth lager, perfect for any occasion." />
+      <BeerCard/>
     </>
   );
 }

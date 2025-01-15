@@ -2,6 +2,7 @@ import "./App.css";
 import { Routes, Route } from "react-router";
 import HomePage from "./pages/HomePage";
 import BeersPage from "./pages/BeersPage";
+import BeerDetailsPage from "./pages/BeerDetailsPage";
 import Header from "./components/Header";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/beers" element={<BeersPage />} />
+        <Route path="/beer/:id" element={<BeerDetailsPage />} />
         {/* Faire la page des détails d'une bière */}
       </Routes>
     </>

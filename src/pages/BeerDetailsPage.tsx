@@ -2,7 +2,7 @@ import "../components/Header.css";
 import Beer from "../types/Beer.types";
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 
 function BeerDetailsPage() {
     const { id } = useParams();
@@ -30,10 +30,14 @@ function BeerDetailsPage() {
             <h1>
                 Détails de la bière numéro {id}
             </h1>
-            <p>{ beer.name }</p>
-            <p>{ beer.description }</p>
-            <p>{ beer.abv }</p>
+            <p>Nom : { beer.name }</p>
+            <p>Description : { beer.description }</p>
+            <p>Taux d'alcool : { beer.abv }%</p>
             <p>{ beer.organic ? "Bio" : "Pas bio" }</p>
+
+            <Link to={`/beers`}>
+                <button className="btn">Précédent</button>
+            </Link>
         </div>
     );
 }

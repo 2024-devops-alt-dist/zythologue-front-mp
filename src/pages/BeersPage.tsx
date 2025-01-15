@@ -32,7 +32,7 @@ function BeersPage() {
                     <ul>
                         {beers.map((beer) => (
                             <li key={beer.id}>
-                                <strong>{beer.name} - </strong>
+                                <strong>Bière {beer.name} - </strong>
                                 <Link to={`/beer/${beer.id}`}>
                                     <button className="btn">Plus d'infos</button>
                                 </Link>

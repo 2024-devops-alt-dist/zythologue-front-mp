@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import "../components/Button.css";
+import "../App.css";
 
 function HomePage() {
     return (
